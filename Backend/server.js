@@ -13,7 +13,6 @@ process.on("uncaughtException",(erro)=>{
     });
 });
 // console.log(hello)
-// 
 //config
 dotenv.config({path:"Backend/config/config.env"})
 //connecting to database
