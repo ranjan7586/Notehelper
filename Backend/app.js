@@ -31,13 +31,7 @@ app.use(express.static(path.join(__dirname,'../frontend/build')));
 app.get('*',function(req,res){
     res.sendFile(path.join(__dirname,'../frontend/build/index.html'));
 })
-let count=0;
-app.get('/api/v1/img', (req, res) => {
-    res.send('<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">');
-    console.log("Hello BRo Success");
-    count++;
-    console.log(count);
-});
+
 
 // if(process.env.NODE_ENV=="production"){
 //     app.use(express.static("frotend/build"));
